@@ -5,7 +5,8 @@
 
 .container-resume {
     font-family: Arial, Helvetica, sans-serif;
-    width: 900px;
+    width: 90%;
+    color:black;
     background-color: rgba(232, 226, 217, 0.897);
     margin: 0px auto;
     padding:15px;
@@ -27,27 +28,54 @@
 
 }
 
-.col1 {
-    margin:0px 10px;
-    display: inline-block;
-    width: 200px;
-    
-    height: 750px;
-}
 
-.col2 {
-    margin: 0px 10px;
-    vertical-align: top;
-    display: inline-block;
-    border-left: green solid 5px;
-    padding-left: 10px;
-    width: 600px;
-}
-
-.list {
-    list-style-position: inside;
-}
 .bold {
     font-weight: bold;
 }
 
+@media screen and (max-width: 480px) {
+    .col1 {
+        border-bottom: green solid 5px;
+        width:100%;
+        display: block;
+        text-align: center;
+    }
+
+    .list {
+       
+        list-style-type: none;
+    }
+
+    .list-long {
+        text-align: left;
+        list-style-type: disc;
+    }
+    .col2 {
+        border:none;
+        text-align: left;
+        width:100%;
+        display: block;
+    }
+}
+
+@media screen and (min-width: 481px) { 
+    .col1 {
+        margin:0px 10px;
+        display: inline-block;
+        width: 25%;
+        /* height: 750px; */
+    }
+    
+    .col2 {
+        margin: 0px 10px;
+        vertical-align: top;
+        display: inline-block;
+        border-left: green solid 5px;
+        padding-left: 5%;
+        width: 45%;
+    }
+    
+    .list {
+        list-style-position: inside;
+    }
+}

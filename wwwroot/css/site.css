@@ -3,6 +3,8 @@ for details on configuring this project to bundle and minify static web assets. 
 body {
     padding-top: 50px;
     padding-bottom: 20px;
+    color: rgb(239, 228, 174);
+    background-color: rgb(38, 142, 45);
 }
 
 /* Wrapping element */
@@ -23,6 +25,11 @@ body {
     width: 100%;
 }
 
+#geology-photo{
+    background-image: url("/images/geology_website.png");
+    background-size: contain;
+}
+
 /* QR code generator */
 #qrCode {
     margin: 15px;
@@ -33,5 +40,39 @@ body {
     /* Hide captions */
     .carousel-caption {
         display: none;
+    }
+}
+
+.project {
+    border: 5px ridge black;
+    padding: 10px;
+    margin: 10px 0px;
+    text-align: center;
+    overflow:auto;
+}
+
+.photo {
+    width:100%;
+}
+
+#name {
+    font-size: 24pt;
+    text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+    
+    #photo-me {
+        width: 100%;
+        
+    }    
+}
+
+@media screen and (min-width: 481px) {  
+    .project {
+       display: inline-block;
+       vertical-align: top;
+       width:30%;
+       margin:1%;
     }
 }
